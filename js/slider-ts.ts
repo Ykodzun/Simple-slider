@@ -257,4 +257,3 @@ class Slider {
         }</style>`;
   }
 }
-const test = new Slider('#root-slider');

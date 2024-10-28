@@ -168,6 +168,13 @@ var Slider = /** @class */ (function () {
             : null;
         return [firstElement, lastElement, tempClone];
     };
+    /**
+     * Recalculates the size of each slide in the slider based on the number of slides.
+     * Updates the CSS style dynamically to adjust the slider's layout and appearance
+     * to accommodate the specified number of slides.
+     *
+     * @param {number} number - The total number of slides to display in the slider.
+     */
     Slider.prototype.recalculateSize = function (number) {
         this.numberOfSlides = number;
         this.shift = 100 / this.numberOfSlides;
@@ -176,4 +183,3 @@ var Slider = /** @class */ (function () {
     };
     return Slider;
 }());
-var test = new Slider('#root-slider');
